@@ -1,16 +1,66 @@
-# React + Vite
+Experiment 5 – Advanced React Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Objective :Enhance the existing Experiment 4 React project by implementing:
+React Router (Multi-page navigation)
+useContext (Global Theme Management)
+Redux Toolkit (Structured State Management)
+useMemo (Performance Optimization)
+New Page integrated with Router
 
-Currently, two official plugins are available:
+🛠 Technologies Used : 
+React (Vite)
+React Router DOM
+Redux Toolkit
+React Redux
+useContext API
+useMemo Hook
+Modern CSS (Responsive Design)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✨ Features Implemented : 
+1️⃣ React Router :
+Home Page
+Projects Page
+Reports Page (New – Experiment 5)
+Navbar navigation with active route highlighting
 
-## React Compiler
+2️⃣ useContext (Theme Management) : 
+Global Theme Context
+Light / Dark Mode Toggle
+Context used in multiple components
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+3️⃣ Redux Toolkit (Cart Management) : 
+Configured Redux Store using configureStore
+Created cartSlice using createSlice
+Implemented actions:
+addItem
+removeItem
+updateQty
+clearCart
 
-## Expanding the ESLint configuration
+Used useDispatch and useSelector
+Redux used in multiple components
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+4️⃣ useMemo Optimization :
+Filtered product search
+Cart summary calculation
+Derived state recalculates only when dependencies change
+
+5️⃣ New Page – Reports : 
+Displays cart statistics
+Shows subtotal, total quantity, unique items
+Demonstrates Redux + useMemo + Context together
+
+experiment5/
+│
+├── src/
+│   ├── components/
+│   ├── context/
+│   ├── data/
+│   ├── pages/
+│   ├── store/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── screenshots/
+├── package.json
+└── README.md
